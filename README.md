@@ -10,7 +10,7 @@
   calculator, date/time
 
 ## URLs
-- **Live app (sandbox, temporary)**: webapp67.kurtatienza19.workers.dev
+- **Live app (sandbox, temporary)**: [webapp67.kurtatienza19.workers.dev](https://webapp67.kurtatienza19.workers.dev/)
 - **Health check**: `/health`
 
 The sandbox URL changes whenever the sandbox recycles. For a permanent URL,
