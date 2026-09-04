@@ -10,7 +10,7 @@
   calculator, date/time
 
 ## URLs
-- **Live app (sandbox, temporary)**: https://3000-iccpg4c1uh11qb9tux2f4-ea026bf9.sandbox.novita.ai
+- **Live app (sandbox, temporary)**: webapp67.kurtatienza19.workers.dev
 - **Health check**: `/health`
 
 The sandbox URL changes whenever the sandbox recycles. For a permanent URL,
@@ -57,43 +57,3 @@ deploy to Cloudflare Pages.
 4. Optionally register the biometric, then unlock with it.
 5. In the app: run `0.1+0.2`, tap **Run arithmetic self-test**, then open the
    **Date & time** tab.
-
-## Deliverables (`task/`)
-| File | Purpose |
-|---|---|
-| `IT2222_PT1_Summary.docx` | The graded Word summary (7 + 8 sentences) |
-| `SCRIPT_6_MEMBERS.md` | Timed narration, 6 members, 4:40 total |
-| `make_summary.py` | Regenerates the .docx with your names/section |
-
-Regenerate the summary with your details:
-```bash
-cd task && python3 make_summary.py \
-  --section "BSIT 3-A" --instructor "Prof. Santos" \
-  --members "Reyes,Santos,Cruz,Garcia,Lim,Tan" \
-  --appurl "<your app url>"
-```
-
-## Runtime budget
-| Video | Members | Duration |
-|---|---|---|
-| 1 — Hardware | 1, 2, 3 | 2:20 |
-| 2 — Software | 4, 5, 6 | 2:20 |
-| **Total** | | **4:40** (limit 5:00) |
-
-## Verification status
-- 17/17 arithmetic tests pass (`node` harness + in-app self-test)
-- All 9 HTTP routes return 200
-- Browser console: 0 errors, 0 warnings
-- Every technical claim in the script cites a primary Android/AOSP source,
-  fetched and confirmed (see References in `SCRIPT_6_MEMBERS.md`)
-
-## Not yet implemented
-- Cloudflare Pages deployment for a permanent URL
-- A compiled native `.apk` (no Android SDK/Gradle in this sandbox — see the
-  note in the chat summary)
-
-## Deployment
-- **Platform**: Cloudflare Pages (Hono + Vite), currently running locally under PM2
-- **Status**: ✅ Active in sandbox
-- **Tech Stack**: Hono, Vite, vanilla ES modules, Web Crypto, WebAuthn, Intl
-- **Last Updated**: 4 September 2026
