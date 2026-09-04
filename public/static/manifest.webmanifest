@@ -1,0 +1,17 @@
+{
+  "name": "ISDemo - IS Hardware and Software",
+  "short_name": "ISDemo",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#0f1417",
+  "theme_color": "#16211b",
+  "icons": [
+    {
+      "src": "/static/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
